@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and array</title>
+    <h1>
+        Methods of string and array
+    </h1>
+    <h2>
+        <h2> METHODS OF STRING</h2>
+        <p>
+           1) charAt()	      Returns the character at the specified index (position)</br>
+           2) charCodeAt()	  Returns the Unicode of the character at the specified index</br>
+           3) concat()	      Joins two or more strings, and returns a new joined strings</br>
+           4) endsWith()	  Checks whether a string ends with specified string/characters</br>
+           5) fromCharCode()  Converts Unicode values to characters</br>
+           6) includes()	  Checks whether a string contains the specified string/characters</br>
+           7) indexOf()	      Returns the position of the first found occurrence of a specified value in a string</br>
+           8) lastIndexOf()	  Returns the position of the last found occurrence of a specified value in a string</br>
+           9) localeCompare() Compares two strings in the current locale</br>
+           10) match()	      Searches a string for a match against a regular expression, and returns the matches</br>
+           11) repeat()	      Returns a new string with a specified number of copies of an existing string</br>
+           12) replace()	  Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced</br>
+           13) search()	      Searches a string for a specified value, or regular expression, and returns the position of the match</br>
+           14) slice()	      Extracts a part of a string and returns a new string</br>
+           15) split()	      Splits a string into an array of substrings</br>
+           16) startsWith()	  Checks whether a string begins with specified characters</br>
+           17) substr()	      Extracts the characters from a string, beginning at a specified start position, and through the specified number of character</br>
+           18) substring()	  Extracts the characters from a string, between two specified indices</br>
+           19) toLocaleLowerCase()	Converts a string to lowercase letters, according to the host's locale</br>
+           20) toLocaleUpperCase()	Converts a string to uppercase letters, according to the host's locale</br>
+           21) toLowerCase()	    Converts a string to lowercase letters</br>
+           23) toUpperCase()	    Converts a string to uppercase letters</br>
+           24) trim()	            Removes whitespace from both ends of a string</br>
+           25) valueOf()	        Returns the primitive value of a String object</br>
+        </p>
+        <h2> 
+            Examples of each string method:
+        </h2>
+        <p>
+            //charAt() will return the character at the specified index
+            charAt() - var str = "HELLO WORLD";
+                       var res = str.charAt(0);</br>
+
+            // charCodeAt() will diplay the unicode of specific index
+            charCodeAt() - var str = "HELLO WORLD";
+                           var n = str.charCodeAt(0);</br>
+
+            // concat() will jon two or more strings and return a joined string
+            concat() - var str1 = "Hello ";
+                       var str2 = "world!";
+                       var res = str1.concat(str2);</br>
+            
+            //endsWith() is used to check whether a string endswith specified string or not
+            endsWith() - var str = "Hello world, welcome to the universe.";
+                         var n = str.endsWith("universe.");</br>
+                        
+            //fromCharCode() will convert unicode values to characters
+            fromCharCode() - var res = String.fromCharCode(65);</br>
+
+            //includes() will check whether the string contains specified string/characters
+             includes() - var str = "Hello world, welcome to the universe.";
+                          var n = str.includes("world");</br>
+
+            //indexOf() will returns the position of the first found occurrence of the string
+            indexOf() - var str = "Hello world, welcome to the universe.";
+                        var n = str.indexOf("welcome");</br>
+
+            //lastIndexOf() will return last found occurence of the string at specified position
+            lastIndexOf() - var str = "Hello planet earth, you are a great planet.";
+                            var n = str.lastIndexOf("planet");</br>
+
+            //localeCompare() will compare two strings in the current locale
+            localeCompare() - var str1 = "ab";
+                              var str2 = "cd";
+                              var n = str1.localeCompare(str2);</br>
+            
+            //match() searches a string for match regular expression
+             match() - var str = "The rain in SPAIN stays mainly in the plain";
+                                  var res = str.match(/ain/g);</br>       
+                                  
+            //repeat()  Returns a new string with a specified number of copies of an existing string
+            repeat() - var str = "Hello world!";
+                       str.repeat(2);</br>                      
+        </p>
+    </h2>
+    <h2>
+        METHODS OF ARRAY
+    </h2>
+    <p>
+       1) concat()	Joins two or more arrays, and returns a copy of the joined arrays</br>
+       2) copyWithin()	Copies array elements within the array, to and from specified positions</br>
+       3) entries()	Returns a key/value pair Array Iteration Object</br>
+       4) every()	Checks if every element in an array pass a test</br>
+       5) fill()	Fill the elements in an array with a static value</br>
+       6) filter()	Creates a new array with every element in an array that pass a test</br>
+       7) find()	Returns the value of the first element in an array that pass a test</br>
+       8) findIndex()	Returns the index of the first element in an array that pass a test</br>
+       9) forEach()	Calls a function for each array element</br>
+       10) from()	Creates an array from an object</br>
+       11) includes()	Check if an array contains the specified element</br>
+       12) indexOf()	Search the array for an element and returns its position</br>
+       13) isArray()	Checks whether an object is an array</br>
+       14) join()	Joins all elements of an array into a string</br>
+       15) keys()	Returns a Array Iteration Object, containing the keys of the original array</br>
+       16) lastIndexOf()	Search the array for an element, starting at the end, and returns its position</br>
+       17) map()	Creates a new array with the result of calling a function for each array element</br>
+       18) pop()	Removes the last element of an array, and returns that element</br>
+       19) push()	Adds new elements to the end of an array, and returns the new length</br>
+       20) reduce()	Reduce the values of an array to a single value (going left-to-right)</br>
+       21) reduceRight()	Reduce the values of an array to a single value (going right-to-left)</br>
+       22) reverse()	Reverses the order of the elements in an array</br>
+       23) shift()	Removes the first element of an array, and returns that element</br>
+       24) slice()	Selects a part of an array, and returns the new array</br>
+       25) some()	Checks if any of the elements in an array pass a test</br>
+       26) sort()	Sorts the elements of an array</br>
+       27) splice()	Adds/Removes elements from an array</br>
+       28) toString()	Converts an array to a string, and returns the result</br>
+       29) unshift()	Adds new elements to the beginning of an array, and returns the new length</br>
+       30) valueOf()	Returns the primitive value of an array</br>
+    </p>
+    <h2>Examples of array methods</h2>
+    <p>
+        //concat()
+        concat() - var hege = ["Cecilie", "Lone"];
+                   var stale = ["Emil", "Tobias", "Linus"];
+                   var children = hege.concat(stale);</br>
+        
+        //copyWithin()
+        copyWithin() - var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                       fruits.copyWithin(2, 0);</br>
+        
+        //entries()
+        entries() - var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                    var f = fruits.entries();
+        
+                    for (x of f) {
+                        document.getElementById("demo").innerHTML += x;
+                    }</br>
+
+        //every()
+        every() - var ages = [32, 33, 16, 40];
+
+                  function checkAdult(age) {
+                     return age >= 18;
+                    }
+        
+                 function myFunction() {
+                    document.getElementById("demo").innerHTML = ages.every(checkAdult);
+                  }</br>
+
+        //fill()
+        fill() - var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                 fruits.fill("Kiwi");</br>
+
+
+    </p>
+</head>
+<body>
+    
+</body>
+</html>
